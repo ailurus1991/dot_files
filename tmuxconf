@@ -33,9 +33,9 @@ setw -g monitor-activity on
 set -g visual-activity on
 
 # use C-a, since it's on the home row and easier to hit than C-b
-set-option -g prefix C-a
-unbind-key C-b
-bind-key C-a send-prefix
+# set-option -g prefix C-a
+# unbind-key C-b
+# bind-key C-a send-prefix
 # make `ctrl+a ctrl+a` to move to beginning of the line
 bind a send-prefix
 
@@ -76,8 +76,8 @@ bind-key C-o rotate-window
 # -------------------------------- pane begin --------------------------------
 # use vim-like keys for splits and windows
 # v / s 竖直、水平分割window为pane
-unbind '"'
-unbind %
+# unbind '"'
+# unbind %
 # 窗口切割  split windows like vim.  - Note: vim's definition of a horizontal/vertical split is reversed from tmux's
 # [prefix-v] / [prefix-s] 垂直/水平分割窗口
 # bind-key v split-window -h
@@ -137,8 +137,8 @@ bind-key ] paste-buffer
 
 # Copy and paste like in vim
 # p 换成paste
-unbind p
-bind p paste-buffer
+# unbind p
+# bind p paste-buffer
 
 
 # the following vi-copy bindings match my vim settings
